@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veteraning's page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a304ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F4196479.jpg&f=1&nofb=1&ipt=12f2f18a308a52ba3be15a0b6e800cc150e8e6382b615756b80887c510ecfb65);
+        }
+        
+        h1 {
+            color: #f8f8f8;
+            text-align: center;
+            font-size: 5.0em;
+            margin-bottom: 30px;
+            animation: wiggle 3s ease-in-out infinite, fadeIn 1.5s ease-out;
+        }
+
+        p {
+            font-size: 1.2em;
+            text-align: center;
+            color: #f0f0f0;
+        }
+        .p2, .p3 {
+            font-size: 1.5em;
+            text-align: center;
+            color: #000000;
+        }
+
+       
+        @keyframes wiggle {
+          0%, 100% { transform: translateX(0); }
+          50% { transform: translateX(5px); }
+        }
+
+        @keyframes breathe {
+          0%, 100% { transform: scale(1); }
+          50% { transform: scale(1.03); }
+        }
+
+        @keyframes fadeSlideIn {
+          0% { opacity: 0; transform: translateY(30px); }
+          100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-15px); }
+        }
+
+        @keyframes fadeIn {
+          0% { opacity: 0; }
+          100% { opacity: 1; }
+        }
+
+        @keyframes pulse {
+          0%, 100% { transform: scale(1); box-shadow: 0 0 0 rgba(207, 207, 207, 0.7); }
+          50% { transform: scale(1.02); box-shadow: 0 0 20px rgba(207, 207, 207, 0.9); }
+        }
+
+        @keyframes colorShift {
+          0%, 100% { background-color: #cfcfcf; }
+          50% { background-color: #e0e0e0; }
+        }
+
+   
+        #svglem {
+          display: block;
+          margin: 0 auto;
+          animation: 
+            breathe 4s ease-in-out infinite, 
+            float 6s ease-in-out infinite,
+            fadeIn 2s ease-out;
+          transition: transform 0.3s ease;
+        }
+
+
+        #svglem:hover {
+          transform: scale(1.1) rotate(5deg);
+          filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+        }
+
+        
+        .content-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 40px;
+          margin-top: 50px;
+          flex-wrap: wrap;
+        }
+
+        .square, .square2 {
+          width: 460px;
+          min-height: 460px;
+          background-color: #cfcfcf;
+          border-radius: 10px;
+          padding: 20px;
+          box-sizing: border-box;
+          animation: 
+            fadeSlideIn 1s ease-out forwards,
+            pulse 4s ease-in-out infinite,
+            colorShift 8s ease-in-out infinite;
+          transition: all 0.3s ease;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .square:hover, .square2:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        ul {
+          padding-left: 20px;
+          animation: fadeIn 1.5s ease-out;
+        }
+
+        li {
+          margin-bottom: 10px;
+          font-size: 1.1em;
+          position: relative;
+          left: 0;
+          transition: left 0.3s ease;
+        }
+
+        li:hover {
+          left: 5px;
+          color: #a304ff;
+        }
+
+        .square::before, .square2::before {
+          content: '';
+          position: absolute;
+          top: -50%;
+          left: -50%;
+          width: 200%;
+          height: 200%;
+          background: linear-gradient(
+            to bottom right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.3) 45%,
+            rgba(255, 255, 255, 0) 60%,
+            rgba(255, 255, 255, 0) 100%
+          );
+          transform: rotate(30deg);
+          animation: shine 8s ease-in-out infinite;
+        }
+
+        @keyframes shine {
+          0% { transform: translateX(-100%) rotate(30deg); }
+          20% { transform: translateX(100%) rotate(30deg); }
+          100% { transform: translateX(100%) rotate(30deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>⋆｡‧˚ʚ🔮Welcome to ˉVˉeteraning's page🔮ɞ˚‧｡⋆</h1>
+    <div class="bitch ass svg">
+      <svg id="svglem" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="182.20792" height="168.37333" viewBox="0,0,182.20792,168.37333"><g transform="translate(-148.89604,-95.81333)"><g data-paper-data="{&quot;isPaintingLayer&quot;:true}" fill="none" fill-rule="nonzero" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><path d="M305.95793,181.15858c7.46055,33.56605 -10.8424,71.32691 -46.06608,79.15589c-35.22366,7.82898 -59.84282,-9.35705 -67.30338,-42.9231c-2.13768,-9.6177 -1.22826,-35.58797 -1.22826,-35.58797c0,0 45.96821,-7.19296 79.72809,-7.93c18.29148,-0.39934 32.99909,-1.13061 34.86963,7.28517z" stroke-width="4"/><path d="M179.55996,227.02396c-16.4778,3.39061 -29.68087,-43.04938 -28.60221,-64.85864c0.39634,-8.01215 13.40596,-5.85792 13.64356,-6.449c1.23724,-3.07672 -16.59342,-10.6085 3.58366,-18.37173c19.81485,-7.62381 60.35813,-0.07742 95.37331,-14.88603c26.07824,-11.02916 46.73577,-25.94371 47.04447,-24.55487c0.28771,1.29446 -2.93638,20.84674 -27.66587,32.21298c-4.5128,2.07421 -1.526,8.97899 13.81105,2.30585c10.38999,-4.5205 20.2126,-15.62101 19.95392,-14.1769c0.76776,0.83138 4.5209,14.2192 -9.36921,24.6929c-10.61358,8.00308 -19.94517,7.7035 -19.46409,8.12995c0.60618,0.53723 -0.78283,11.11315 17.96737,3.13683c9.51527,-4.04764 22.56744,-17.30077 22.71724,-16.88257c0.43616,1.2177 5.39627,23.74568 -25.36927,37.31887c-1.90199,0.83913 -4.31316,-0.3314 -6.7193,-0.74307c-31.95067,-5.46599 -98.91724,6.52683 -105.61111,6.76538c-5.2994,0.1889 14.96024,40.95751 -11.29349,46.36004z" stroke-width="4"/><g stroke-width="3.5"><path d="M250.8927,168.13579c7.40184,-0.41793 14.11998,11.9559 15.00543,27.63775c0.88545,15.68185 -4.39712,28.73329 -11.79892,29.15123c-7.40184,0.41793 -14.11998,-11.95591 -15.00543,-27.63776c-0.88545,-15.68185 4.39712,-28.73328 11.79892,-29.15122z"/><path d="M280.87726,166.44275c7.40184,-0.41793 14.11998,11.95591 15.00544,27.63776c0.88545,15.68185 -4.39712,28.73328 -11.79892,29.15122c-7.40184,0.41793 -14.11998,-11.9559 -15.00544,-27.63775c-0.88545,-15.68185 4.39712,-28.73329 11.79892,-29.15122z"/></g></g></g></svg>
+    </div>
+    <div class="content-wrapper">
+      <div class="square2">
+        <p class="p3">𝓢𝓸𝓬𝓲𝓪𝓵𝓼:</p>
+        <ul>
+          <li>⌯⌲Telegram @Chickensaurous</li>
+          <li>👾Discord: @veteraning</li>
+          <li>◘ Roblox: @VeteraningXD</li>
+          <li>🟠 Reddit u/scratch-veterab</li>
+          <li>👨‍💻 GitHub: @Veteraning</li>
+          <li>₿🟨 BTC Wallet: bc1qygd0exkm4t28qs9lapd3ew0pgp8feqjpjuds4u (DM ME BEFORE ANY DONO)</li>
+          <li>∆🔶 Geometry dash: @Veteraning</li>
+        </ul>
+      </div>
+      <audio id="myAudio" loop autoplay style="width: 1px; height: 1px; opacity: 0; position: absolute;">
+  <source src="https://veteraning.nekoweb.org/Sofaygo%20-%20Knock%20Knock%20(Instrumental)%20[Produced%20by%20Lil%20Tecca].mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+
+      <div class="square">
+        <p class="p2">𝕿𝖍𝖎𝖓𝖌𝖘 𝖎 𝖉𝖎𝖉:</p>
+        <ul>
+          <li>Made Operating Games (https://sites.google.com/view/operatingames)</li>
+          <li>Creator of this Site (Duh)</li>
+          <li>Creator of Draw n' roll</li>
+          <li>Professional skidder</li>
+          <li>I still have a lot to learn so I don't have a lot of projects yet...</li>
+        </ul>
+      </div>
+    </div>
+</body>
+</html>
